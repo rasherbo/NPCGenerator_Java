@@ -1,0 +1,4 @@
+Darkvision
+Dwarven Resilience: Advantage on saving throws against poison, resistant to poison damage.
+Stonecunning: Expertise on history checks about stone.
+Languages: Common and Dwarven.

@@ -1,0 +1,262 @@
+import java.util.*;
+
+public class Druid implements Class
+{
+    public static final int hitDice = 8;
+    private ArrayList<String> proficiencies = new ArrayList<String>();
+    private HashMap<String, String> features = new HashMap<String, String>();
+
+    public Druid(int level)
+    {
+        levelFeatures(features, level);
+    }
+
+    public void levelFeatures(HashMap<String, String> features, int level)
+    {
+        if(level == 1)
+        {
+            one(features);
+        } else if(level == 2)
+        {
+            two(features);
+        }else if(level == 3)
+        {
+            three(features);
+        }else if(level == 4)
+        {
+            four(features);
+        }else if(level == 5)
+        {
+            five(features);
+        }else if(level == 6)
+        {
+            six(features);
+        }else if(level == 7)
+        {
+            seven(features);
+        }else if(level == 8)
+        {
+            eight(features);
+        }else if(level == 9)
+        {
+            nine(features);
+        }else if(level == 10)
+        {
+            ten(features);
+        }else if(level == 11)
+        {
+            eleven(features);
+        }else if(level == 12)
+        {
+            twelve(features);
+        }else if(level == 13)
+        {
+            thirteen(features);
+        }else if(level == 14)
+        {
+            fourteen(features);
+        }else if(level == 15)
+        {
+            fifteen(features);
+        }else if(level == 16)
+        {
+            sixteen(features);
+        }else if(level == 17)
+        {
+            seventeen(features);
+        }else if(level == 18)
+        {
+            eighteen(features);
+        }else if(level == 19)
+        {
+            nineteen(features);
+        }else if(level == 20)
+        {
+            twenty(features);
+        }
+    }
+
+    public int getHP(int level)
+    {
+        Random rand = new Random();
+        int hp = hitDice;
+        for(int i = 1; i < level; i++)
+        {
+            hp += rand.nextInt(hitDice) + 1;
+        }
+        return hp;
+    }
+
+    public ArrayList<String> getProficiencies()
+    {
+        return proficiencies;
+    }
+
+    public String getClasss()
+    {
+        return "Druid";
+    }
+
+    public HashMap<String, String> getFeatures()
+    {
+        return features;
+    }
+
+    public String randomProficiency()
+    {
+        Random random = new Random();
+        int num = random.nextInt(18);
+        if(num == 0)
+        {
+            return "Acrobatics";
+        } else if(num == 1)
+        {
+            return "Animal Handling";
+        } else if (num == 2)
+        {
+            return "Arcana";
+        } else if(num == 3)
+        {
+            return "Athletics";  
+        } else if(num == 4)
+        {
+            return "Deception";
+        } else if(num == 5)
+        {
+            return "History";
+        } else if(num == 6)
+        {
+            return "Insight";
+        } else if(num == 7)
+        {
+            return "Intimidation";
+        } else if(num == 8)
+        {
+            return "Investigation";
+        } else if(num == 9)
+        {
+            return "Medicine";
+        } else if(num == 10)
+        {
+            return "Nature";
+        } else if(num == 11)
+        {
+            return "Perception";
+        } else if(num == 12)
+        {
+            return "Performance";
+        } else if(num == 13)
+        {
+            return "Persuasion";
+        } else if(num == 14)
+        {
+            return "Religion";
+        } else if(num == 15)
+        {
+            return "Sleight of Hand";
+        } else if(num == 16)
+        {
+            return "Stealth";
+        } else
+        {
+            return "Survival";
+        }
+    }
+
+    public void one(HashMap<String, String> features)
+    {
+
+    }
+
+    public void two(HashMap<String, String> features)
+    {
+        levelFeatures(features, 1);
+    }
+
+    public void three(HashMap<String, String> features)
+    {
+        levelFeatures(features, 2);
+    }
+
+    public void four(HashMap<String, String> features)
+    {
+        levelFeatures(features, 3);
+    }
+
+    public void five(HashMap<String, String> features)
+    {
+        
+        levelFeatures(features, 4);
+    }
+
+    public void six(HashMap<String, String> features)
+    {
+        levelFeatures(features, 5);
+    }
+    
+    public void seven(HashMap<String, String> features)
+    {
+        levelFeatures(features, 6);
+    }
+
+    public void eight(HashMap<String, String> features)
+    {
+        levelFeatures(features, 7);
+    }
+
+    public void nine(HashMap<String, String> features)
+    {
+        levelFeatures(features, 8);
+    }
+
+    public void ten(HashMap<String, String> features)
+    {
+        levelFeatures(features, 10);
+    }
+    
+    public void twelve(HashMap<String, String> features)
+    {
+        levelFeatures(features, 11);
+    }
+
+    public void thirteen(HashMap<String, String> features)
+    {
+        levelFeatures(features, 12);
+    }
+
+    public void fourteen(HashMap<String, String> features)
+    {
+        levelFeatures(features, 13);
+    }
+
+    public void fifteen(HashMap<String, String> features)
+    {
+        levelFeatures(features, 14);
+    }
+
+    public void sixteen(HashMap<String, String> features)
+    {
+        levelFeatures(features, 15);
+    }
+
+    public void seventeen(HashMap<String, String> features)
+    {
+        levelFeatures(features, 16);
+    }
+
+    public void eighteen(HashMap<String, String> features)
+    {
+        levelFeatures(features, 17);
+    }
+
+    public void nineteen(HashMap<String, String> features)
+    {
+        levelFeatures(features, 18);
+    }
+
+    public void twenty(HashMap<String, String> features)
+    {
+        levelFeatures(features, 19);
+    }
+
+}

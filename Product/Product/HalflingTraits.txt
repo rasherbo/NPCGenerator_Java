@@ -1,0 +1,5 @@
+Size: Small.
+Lucky: When you roll a one on an attack roll, ability check, or saving throw you may reroll the dice, but you must use the new roll.
+Brave: Advantage on saving throws against being frightened.
+Halfling Nimbleness: You can move through the space of any creaure larger than you.
+Languages: Common and Halfling.

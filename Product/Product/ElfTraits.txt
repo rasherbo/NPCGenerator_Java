@@ -1,0 +1,4 @@
+Darkvision
+Fae Ancestry: Advantage on saving throws against being charmed, magic cannot put you to sleep.
+Trance:  Instead of sleeping, elves go into a semiconcious trance for 4 hours and gain the same benefits as a long rest.
+Languages: Common and Elvish.
